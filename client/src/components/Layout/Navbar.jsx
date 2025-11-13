@@ -3,19 +3,19 @@ import { assets } from "../../assets/assets.js";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AppContext } from "../../context/AppContext.jsx";
 import { ModeToggle } from "../ModeToggle.tsx";
-// import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
+import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
 
 const Navbar = () => {
   // const [user, setUser] = React.useState(null);
-  const { user } = useContext(AppContext);
+  // const { user } = useContext(AppContext);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
 
-  // const { openSignIn } = useClerk();
+  const { openSignIn } = useClerk();
   const navigate = useNavigate();
   const location = useLocation();
-  // const { isSignedIn, user } = useUser();
+  const { isSignedIn, user } = useUser();
 
   // Handle scroll effect
   useEffect(() => {
@@ -33,10 +33,10 @@ const Navbar = () => {
     setIsProfileOpen(false);
   }, [location.pathname]);
 
-  const openSignIn = () => {
-    // Placeholder for actual sign in function
-    console.log("Sign in clicked");
-  };
+  // const openSignIn = () => {
+  //   // Placeholder for actual sign in function
+  //   console.log("Sign in clicked");
+  // };
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -126,7 +126,8 @@ const Navbar = () => {
 
               {/* Profile Dropdown */}
               <div className="relative">
-                <button
+                <UserButton />
+                {/* <button
                   onClick={() => setIsProfileOpen(!isProfileOpen)}
                   className="group relative w-10 h-10 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 hover:border-purple-400 dark:hover:border-purple-500 transition-all duration-300 hover:scale-110"
                 >
@@ -136,10 +137,10 @@ const Navbar = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                </button>
+                </button> */}
 
                 {/* Dropdown Menu */}
-                {isProfileOpen && (
+                {/* {isProfileOpen && (
                   <div className="absolute right-0 top-12 w-48 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50 animate-in slide-in-from-top-2">
                     <div className="px-4 py-2 border-b border-gray-100 dark:border-gray-700">
                       <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
@@ -181,7 +182,7 @@ const Navbar = () => {
                       </button>
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
             </div>
           ) : (

@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#101a23] dark group/design-root overflow-x-hidden"
+        style='font-family: Inter, "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223649] px-10 py-3">
+                <div class="flex items-center gap-4 text-white">
+                    <div class="size-4">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Imagify</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-9">
+                        <a class="text-white text-sm font-medium leading-normal" href="./home.html">Home</a>
+                        <a class="text-white text-sm font-medium leading-normal" href="./result.html">Generate</a>
+                        <a class="text-white text-sm font-medium leading-normal" href="./gallery.html">Gallery</a>
+                        <a class="text-white text-sm font-medium leading-normal" href="./buy.html">Pricing</a>
+                    </div>
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#223649] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                        <span class="truncate">Get Credits</span>
+                    </button>
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCP1qrqLqbcmCTtr5kabW7tV_eur8Snk9iDceX7ZbUuIvN9duhhhLj-T2nCMokbBmnmnytBLJOqZzlXwdZL7pKGX6tI6nKMscySiLEMWeKcNgc888lVWzKgKtBv4nDqKuJIYh9LPvI60cSVbqV5yJIhpMJUJk2R-34hF_BLSuEDhoImKOiW9ze3EPOgWMJ-HLddGY-C7ad4sI_p7BSd1Zic2Vor7jv3ZQWh1JTH4I4DLMxSBVzGSIVp4YCAJXS7HB7FuutfylKw8cJz");'>
+                    </div>
+                </div>
+            </header>
+            <div class="px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="flex flex-wrap justify-between gap-3 p-4">
+                        <div class="flex min-w-72 flex-col gap-3">
+                            <p class="text-white tracking-light text-[32px] font-bold leading-tight">Gallery</p>
+                            <p class="text-[#90adcb] text-sm font-normal leading-normal">All your generated images in
+                                one place</p>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3">
+                        <label class="flex flex-col min-w-40 h-12 w-full">
+                            <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                                <div class="text-[#90adcb] flex border-none bg-[#223649] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                                    data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <path
+                                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <input placeholder="Search"
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#223649] focus:border-none h-full placeholder:text-[#90adcb] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                    value="" />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="flex gap-3 p-3 flex-wrap pr-4">
+                        <button
+                            class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#223649] pl-4 pr-2">
+                            <p class="text-white text-sm font-medium leading-normal">Sort by</p>
+                            <div class="text-white" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDAsSyi9gWTvJfSMQtfi3CoYrh47dNVzAHcA6kBVk2SYz7vb94udLvdG11uE-JDfdxiDgDVhUEyT__4Z_A8kv1TAweRtgvRJHw6Lt-PDqupbrwbvd08Mydwg-hTh5S-wVJPd3gro9VKvmlr09ZvaFyhXbSATYDSw2zz7C7LqQZ9Gz8xmxKlPrhfmpBpxc1JkehHLtfSrSDmLHlCNN56anv8rEb_xvXeAF4ekvaslC_5lPZS-wIIwgSLQ_B0Fiz7gaHW3FN95Z8-4U9p");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBapqK1u5Ig6-6F7FcSLOGsGW-uvG6KNqM2ULGrvjAFEBN4PQmdG_OU31dpeKnqiYVag0XkcsmoXrHIVMZA_KFS-SZ8_DDWVZSh-D_Ag2TBPegBNfKIKHeE8iIPEgraRQky8MmzC3-8134BLG2nV5wMf_H46cWOQwEu9YzkSFXEus6ZQrQg4BSKJ_LCcWHERr6kKSATgFXP0GohXWGqKK59DXyIHMX52sYjS4Xpg7jM-g_377M1XlPr4cgMvxRsWJhFDFqX83_tlxr2");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3KmJXJd1WX7OB0oW1tqqq5kezIfurppaiMHb5cumJkkiivWnh4UA82Dw-3txo5idt4jA8fnmar_t-YwAlLvA9PX7BbfRdoumEt9-HS-Hw34czscimKzhi0cLrqywZSB1vispJCkcpGe0qklzUk96ldR_U9wbxl3x3R4rdZwhdWyXxxZ5gig5LZFpJON-75WsG7FxAGY2ORvCvE_b9JO0zHKQKPAXMAKTmDn3XhBBmjGVLwC4I0iRFDs8r81BU9pm-z5qBDtawIdWZ");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLPL30JrC3Jnt7hPSBVE7DTu0bQoadsOpVvTSR1EDXNBj1jhG5FMYuQbwzpN0eEFbccIZgqeMm3Ym2rZlrK-YkbrCp0B3yjpSIUJeWhxJYpohDcDzGCLkeptcVNgVfBXK5HFGJZU-TBKM7Yot3uOwvYrutqkrcw1w7MCPLJ2HgXtDqK-0xX6ctpsCBwYgeQvkGmXCRaiUs1puasUJXJyM11JsE5-CEr6eocqnIf_jZtFHuAOjdRN7bnOELQDIVNM7CRPURcwqWCwKJ");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5r8_5JizndGkiBsQfsfsWQc2yDX9ZxUVDMWoCAdnquflL3fzi0upnUhmnBvKbV6sf33YEYL77ynMpoobXzM5kFAi435C6atUqTqaYkG-mdJCS7IZr8j0M7AmYI_yiVuBKYjP9FOMqO3MYRjpoBN7PKGKDJgB5bJr-CdUksvAgkpuBOPOOKgWmuJKU9dhMFcPSUjJHaiKVCBscGx2YKShgXRnpqK4HQ4gbWNSgVUDnuM4fIwWL9HWkbWTJsECh93Y0hgzIwpKdDC08");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANg9HS-0CxzhLaSsVzGXwLInviWaggWVC8po1-X-3nVV3-JQ6cjeq67v84FkkNGbhRWp5tmzaNjhcNP2V6bC3w6ODFA0jbDyCnTLZt8Rf0PVnCVqAdlLZ79R3QoUQnDgXqgwe9Oe-Pg7xzXl9ndFOmZpI3cH-EQU26LNngqJgjqHbEfnkTjzXeFukzWe12l5l0ZTyG6eg_ALlvjBMTvNzNwmpVkMjznR1Vq1JTm13I6WjUZee7LqQPg4wIDpRwf7KH-YluTlPwVGIG");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAVCKaiK1c2_aD3Hz0jnKacmC1rVJonQWsPlWrr3qDWqcyymoxDMVxtL6vhtSvKpVziaEa3NqrUKo_pCEJOq7fky7IFv5vA9fU2Ju1pNXinKNEHxjb28ZlAN0C-ec2NBRlvtByY1-7tQo-snI4xTp12bDEonMN7Djrk7E58HPZ9ED_KH9l3eSDWXxpgswLhOehtW6tnZTUo1b2msog4NuVxb37eK14uQXLVRnBHSaXC2zRwi8UXdZVF0ds2XLpMtiash1mQeMb-BH0r");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDw23EkRWbaH1nZMOhAjxrOmHSpxvpQUafqOhNICZwdUi5Z3A-nW9SsSAB16xyZH3BK7VtRxO3jAkrV1jFMwMk2kue1-rzV1FKI_8hztoUhZxYj65RqsvW9a7ILTNpKynKl8YF3x4Ol_98s5PRFoExDVibBbWbMqLKJDdNthDOtA3ZVOQXk6bbTJXh3pfp7DmnmuJi_iI4m88YRf4iBwky4kbQCUsv8e3rTbolvArRNzeiz6y_BzKSFlZuHjW_hCMwU901B46fjvaiM");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBeKL1UnGo2ibdBVDzvvbn8sBKX0JILdppiCztg_3wy_bCsF_yZQeVtrzb5dht1fVULBhdwzHdNi45NcHy7LRwFJfplYnuyuLEX6BIR94gS1uB6OcOezpGQqdTQy1pPcfMidO7xEKz1mTSCG_LpdnLJlbnndPKGsRrm1a4OaJNnCAH0W4xAqaTt2yN46Un6rRk7IrycvUV_uvdnz5qJLvsTCtY1cTL9CoRhcphzpubEeLZcnxyx3Mh7vD7o3uRtjdfsiK9ORj14inZj");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcX8dquem_MZlKVY561O7PXxvaNDpcZ6ErhQWWJi_CGH24qLs7_x7u-RWNx6BexWozpBQU5Qe_5UgYKmdE9q9lOkV7XmO881GCax2gpOsQsOfrJKL9388tpS3nbxreUzU1o0ui7EKqhWVg9075wY6TN6iASwQxzwdZ0CleJKyRtCehA68_tCkRGj-aXU0H97SSzcmC8M-vAKWda_jcsLeDZO-mUFAoNcouEU9iIhufK--0INYJn4_ELSmRzhvRlCpnc22rkm6BthED");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4xeEyjXEUkvZtKJxhyrxdS0C_SqGz1qbIkO2LVTG9clOxy6HqZyEY5cPOpzZzOylFE2GHpNDj1PKGM4AzBtydwOabgqRUI0RRsbd9nOD0IEMFMm-MW0taQ29DNagkx6QeZ8XL9gqJqDeRzW4rSdLSHULldVNkE8ieMMhL_A_FcUmj22v_0bP_k-qB0qpt05naivdFMnaV_F8top0QOitY40Okys7fiVYqsqTazj75GJjjOuU7o_aJShOkCuhFKBlt_Vu0ky4qLwzv");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFoOQB8bbSQI9y7WI3i-2V7CGORHxFFRZckKKkNb0xVrtfFDiWTc6eJT_BO1bcosPQ2eqC794cKKYgP6ZlBAF-0aUgNDe4-75ZmtdqDdGGr0CNoiomo-b_qjT63lSeTLOBtUELT58zAsgdeug_WvuSEGHY6sMuwU6u5f3PFcBwsPlnub_lX42VzpQPEmMl81rYsoy2qVwG9_T1UJIAMx9E2QOrin9X1riIKRmv431ipfaY_YeC0uGQRURYKsvOdPAAXyShxR0RCgnY");'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center p-4">
+                        <a href="#" class="flex size-10 items-center justify-center">
+                            <div class="text-white" data-icon="CaretLeft" data-size="18px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white rounded-full bg-[#223649]"
+                            href="#">1</a>
+                        <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white rounded-full"
+                            href="#">2</a>
+                        <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white rounded-full"
+                            href="#">3</a>
+                        <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white rounded-full"
+                            href="#">4</a>
+                        <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-white rounded-full"
+                            href="#">5</a>
+                        <a href="#" class="flex size-10 items-center justify-center">
+                            <div class="text-white" data-icon="CaretRight" data-size="18px" data-weight="regular">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
